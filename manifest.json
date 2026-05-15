@@ -3,6 +3,11 @@
   "name": "AI Search Tab",
   "description": "Replace Chrome's new tab with a focused multi-search page.",
   "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
