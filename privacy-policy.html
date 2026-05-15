@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — AI Search Tab</title>
+    <style>
+      body {
+        max-width: 720px;
+        margin: 60px auto;
+        padding: 0 24px;
+        font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #1e293b;
+      }
+      h1 { font-size: 1.8rem; margin-bottom: 4px; }
+      h2 { font-size: 1.15rem; margin-top: 2em; }
+      p, li { color: #374151; }
+      ul { padding-left: 1.4em; }
+      .updated { color: #6b7280; font-size: 0.9rem; margin-top: 0; }
+      a { color: #2563eb; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 14, 2026</p>
+
+    <h2>Overview</h2>
+    <p>
+      AI Search Tab is a Chrome extension that replaces your new tab page with a focused,
+      multi-engine search interface. This policy explains what data the extension accesses
+      and how it is handled.
+    </p>
+
+    <h2>Data We Do Not Collect</h2>
+    <p>AI Search Tab does <strong>not</strong>:</p>
+    <ul>
+      <li>Collect, transmit, or store any personal information on external servers.</li>
+      <li>Track your browsing history, search queries, or activity.</li>
+      <li>Use analytics, telemetry, or crash-reporting services.</li>
+      <li>display advertisements or share data with third parties.</li>
+      <li>Require account registration or login of any kind.</li>
+    </ul>
+
+    <h2>Local Storage</h2>
+    <p>
+      The extension saves three small preferences to your browser's
+      <strong>local storage</strong> — a standard browser mechanism that keeps data on
+      your device only and is never transmitted anywhere:
+    </p>
+    <ul>
+      <li><code>selectedEngine</code> — which search engine you last used.</li>
+      <li><code>defaultEngine</code> — your chosen default search engine.</li>
+      <li><code>theme</code> — whether you prefer dark or light mode.</li>
+    </ul>
+    <p>
+      These values remain on your device and can be cleared at any time by removing the
+      extension or clearing your browser's site data.
+    </p>
+
+    <h2>Permissions Explained</h2>
+    <ul>
+      <li>
+        <strong>tabs</strong> — used solely to navigate the current tab to the search
+        engine URL you selected. No tab data is read or recorded.
+      </li>
+      <li>
+        <strong>Host access to chatgpt.com and claude.ai</strong> — used only to
+        auto-fill and auto-submit the search query you typed in the new tab page. The
+        content script activates only when the URL contains the
+        <code>aisearch_submit=1</code> parameter that the extension itself added. No
+        content from these pages is read, recorded, or transmitted.
+      </li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      When you perform a search, your query is sent directly to the search engine you
+      selected (Google, ChatGPT, Claude, Gemini, Perplexity, Grok, Reddit, X, or Amazon).
+      Each of those services has its own privacy policy. AI Search Tab has no control over
+      and takes no responsibility for their data practices.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      This extension is not directed at children under 13. We do not knowingly collect
+      any information from children.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      If this policy changes, the updated version will be published at the same URL and
+      the "Last updated" date above will be revised.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this privacy policy can be sent to
+      <a href="mailto:kotlanikhil7@gmail.com">kotlanikhil7@gmail.com</a>.
+    </p>
+  </body>
+</html>
