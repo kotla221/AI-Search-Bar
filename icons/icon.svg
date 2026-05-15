@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="AI Search Tab">
+  <rect width="128" height="128" rx="24" fill="#121417"/>
+  <circle cx="56" cy="56" r="27" fill="none" stroke="#8bd3dd" stroke-width="12"/>
+  <path d="m78 78 26 26" stroke="#f6bd60" stroke-width="14" stroke-linecap="round"/>
+  <path d="M44 54h24M44 70h16" stroke="#f4f1e8" stroke-width="8" stroke-linecap="round"/>
+</svg>

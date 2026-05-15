@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "AI Search Tab",
+  "description": "Replace Chrome's new tab with a focused multi-search page.",
+  "version": "1.0.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "action": {
+    "default_title": "Open AI Search Tab"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": [
+        "ai-autosubmit.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://claude.ai/*"
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}

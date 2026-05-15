@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Search Tab</title>
+    <link rel="icon" href="icons/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="command-center" aria-label="Search">
+        <header class="top-bar">
+          <div class="brand-lockup">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <p class="eyebrow" id="modeLabel">Search with Google</p>
+              <h1>Think less. Find more.</h1>
+            </div>
+          </div>
+
+          <div class="actions">
+            <div class="time-chip" aria-label="Date and time">
+              <span id="dateLabel"></span>
+              <strong id="clockLabel"></strong>
+            </div>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+              <span class="toggle-track" aria-hidden="true">
+                <span class="toggle-thumb"></span>
+              </span>
+              <span id="themeLabel">Dark</span>
+            </button>
+          </div>
+        </header>
+
+        <form class="search-form" id="searchForm">
+          <label class="sr-only" for="queryInput">Search query</label>
+          <div class="input-wrap">
+            <span class="search-glyph" aria-hidden="true"></span>
+            <input
+              id="queryInput"
+              name="query"
+              type="search"
+              autocomplete="off"
+              spellcheck="true"
+              placeholder="Search anything..."
+              autofocus
+            />
+          </div>
+          <button type="submit" aria-label="Search selected engine">
+            <span>Search</span>
+          </button>
+        </form>
+
+        <p class="helper-text">Enter searches here. Shift Enter opens a new tab.</p>
+
+        <div class="engine-grid" id="engineGrid" role="radiogroup" aria-label="Search engine"></div>
+
+        <div class="default-row" aria-live="polite">
+          <span id="defaultEngineLabel"></span>
+          <button class="text-button" id="defaultEngineButton" type="button"></button>
+        </div>
+      </section>
+    </main>
+
+    <script src="newtab.js"></script>
+  </body>
+</html>
