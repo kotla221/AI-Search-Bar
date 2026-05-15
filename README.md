@@ -14,6 +14,5 @@ A Chrome extension that replaces the new tab page with one clean search box and 
 1. Open `chrome://extensions`.
 2. Turn on **Developer mode**.
 3. Click **Load unpacked**.
-4. Select this folder: `/Users/kotlanikhil/Desktop/Search Bar`.
+4. Select this folder: `folder_path`.
 
-New tabs will open the search page. Clicking the extension button also opens the same page in the current tab.
